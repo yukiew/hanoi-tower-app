@@ -1,0 +1,26 @@
+{
+  "name": "hanoi-app",
+  "version": "1.0.0",
+  "description": "Realize the function of Tower of Hanoi. According to the number of layers entered, each step will be printed out in sequence.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukiew/hanoiTower.git"
+  },
+  "keywords": [
+    "hanoi"
+  ],
+  "author": "yukiew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukiew/hanoiTower/issues"
+  },
+  "homepage": "https://github.com/yukiew/hanoiTower#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
