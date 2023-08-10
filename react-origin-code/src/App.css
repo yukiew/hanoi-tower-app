@@ -1,0 +1,14 @@
+body {
+  background: #fff;
+}
+
+.hanoi-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.hanoi-container .hanoi-wrap {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

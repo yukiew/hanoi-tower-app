@@ -1,0 +1,17 @@
+/*item*/
+.hanoi-item {
+    width: 10%;
+    float: left;
+    list-style: none;
+    width: 56px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; 
+}
+
+td, th{
+    height: 28px;
+    text-align: center;
+}

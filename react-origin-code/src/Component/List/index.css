@@ -1,0 +1,11 @@
+/*list*/
+.tables-div {
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 560px;
+    padding: 0px;
+}
+
+.clear-float {
+    clear: both;
+}
