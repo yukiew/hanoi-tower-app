@@ -18,13 +18,13 @@ export default class Header extends Component {
     if (keyCode !== 13) return
     //準備好一個對象
     const inputValue = target.value.trim()
-    //添加的todo不能為空
+    //添加的inputValue不能為空
     if (inputValue === '') return
-    //添加的todo不能為空
+    //添加的inputValue必須是正整數
     if (!/^\d+$/.test(inputValue)) return
-    //準備好一個對象
+    //準備好一個inputObj對象
     const inputObj = {id:nanoid(), count: inputValue}
-    // 將todoObj傳遞給App
+    // 將inputObj傳遞給App
     this.props.buildTower(inputObj)
     // 清空輸入
     target.value = ''
@@ -33,6 +33,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="hanoi-header">
+        {/* 將回調函數設置在input上 */}
         <input onKeyUp={this.handleKeyUp} type="text" placeholder="請輸入你的塔的層數(正整數)，按Enter確認" />
       </div>
     )

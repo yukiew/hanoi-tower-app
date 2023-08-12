@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './index.css'
 
 export default class Item extends Component {
+    // 如果塔的高度不足，則會用""補足，用意是去方便畫表
     fullArray(array, count) {
         const temp = [...array];
         while (temp.length < count) {
@@ -16,7 +17,7 @@ export default class Item extends Component {
         const a = this.fullArray(A, count)
         const b = this.fullArray(B, count)
         const c = this.fullArray(C, count)
-        // const mouse = this.state.mouse
+        // 以下則是以數據畫出table
         return (
             // 事件回調得返回值必須是函數
             <div className="hanoi-item">

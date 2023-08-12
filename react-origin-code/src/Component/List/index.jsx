@@ -15,6 +15,7 @@ export default class List extends Component {
     return (
         <div className="tables-div">
           {
+            // 將數組內的每一個元素create一個Item組件，並將數據傳入item
             tables.map((table, index)=>{
                 return <Item key={table.id} table={table} index={index} count={count}/>
             })
